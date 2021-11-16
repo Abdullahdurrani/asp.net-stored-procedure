@@ -12,6 +12,6 @@ Create Procedure spEmployees_Insert
 @Name nvarchar(50),
 @Email nvarchar(50)
 as begin
-delete from Employees where Id=@Id
+insert into Employees values(@Id,@Name,@Email)
 end
 ```
