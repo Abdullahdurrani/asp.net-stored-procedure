@@ -6,6 +6,7 @@
 #### Write Stored procedure
 
 #### For example: 
+```
 Create Procedure spEmployees_Insert
 @Id int,
 @Name nvarchar(50),
@@ -13,3 +14,4 @@ Create Procedure spEmployees_Insert
 as begin
 delete from Employees where Id=@Id
 end
+```
